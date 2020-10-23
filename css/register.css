@@ -1,0 +1,381 @@
+.main {
+    width: 1516px;
+    margin: 0 auto;
+}
+
+
+/* 头部导航 */
+
+.nav {
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    z-index: 999;
+}
+
+.nav .header .left {
+    width: 744px;
+    height: 100%;
+    float: left;
+    margin-left: 65px;
+}
+
+.nav .header .left li {
+    float: left;
+    padding-top: 59px;
+    margin-right: 43px;
+}
+
+.nav .header .left li:nth-child(8) {
+    margin-right: 0px;
+}
+
+.nav .header .left li a {
+    color: #000;
+    font-size: 20px;
+}
+
+.nav .header .right {
+    width: 492px;
+    height: 20px;
+    float: left;
+    margin-top: 12px;
+}
+
+.nav .header .right li {
+    float: left;
+    border-right: 1px solid #000;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+.nav .header .right li:nth-child(6) {
+    border-right: none;
+    padding-right: 0px;
+}
+
+.nav .header .right li:nth-child(1) {
+    padding-left: 0px;
+}
+
+.nav .header .right li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.nav .header .sousuo {
+    width: 288px;
+    height: 39px;
+    float: right;
+    margin: 18px;
+}
+
+.nav .header .sousuo input {
+    width: 247px;
+    height: 36px;
+    border: 1px solid #999;
+    border-right: none;
+    float: left;
+}
+
+.nav .header .sousuo .search {
+    background-color: #f20015;
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+
+.nav .header .sousuo .search a {
+    color: #fff;
+    line-height: 38px;
+    margin-left: 10px;
+}
+
+.cont {
+    width: 100%;
+    height: 736px;
+}
+
+.register {
+    width: 145px;
+    height: 392px;
+    float: left;
+    padding-top: 100px;
+    margin-left: 381px;
+    margin-top: 55px;
+    border-right: 2px solid #dbdbdb;
+    padding-right: 203px;
+}
+
+.register h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.register img {
+    margin-left: 6px;
+    margin-top: 20px;
+}
+
+.register h1 {
+    color: #000;
+    font-size: 22px;
+    margin-left: 4px;
+}
+
+.register h2 {
+    color: #585858;
+    font-size: 12px;
+}
+
+.register h3 {
+    color: #666;
+    font-size: 16px;
+    margin-top: 27px;
+    border-bottom: 1px solid #000;
+}
+
+.register h4 {
+    color: #f60012;
+    font-size: 12px;
+}
+
+.Signin {
+    width: 332px;
+    height: 392px;
+    float: left;
+    padding-top: 100px;
+    margin-left: 187px;
+    margin-top: 55px;
+}
+
+.Signin h1 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.Signin .one input {
+    width: 330px;
+    height: 34px;
+    border: 2px solid #cdcccc;
+    margin-top: 16px;
+}
+
+.Signin .three input {
+    width: 330px;
+    height: 34px;
+    border: 2px solid #cdcccc;
+    margin-top: 16px;
+}
+
+.Signin .three p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.Signin .agreement {
+    width: 235px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.Signin .agreemen input {
+    float: left;
+}
+
+.Signin .agreement p {
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+
+.Signin .agreement p a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.Signin .sig {
+    width: 100%;
+    line-height: 50px;
+    background-color: #000;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.service {
+    width: 100%;
+    height: 142px;
+    background-color: #f4f4f4;
+    margin-top: 142px;
+}
+
+.service ul {
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service ul li {
+    float: left;
+    height: 142px;
+    background-image: url(../images/foot-icon1.png);
+    background-repeat: no-repeat;
+    background-position: 31px 34px;
+    padding-left: 87px;
+    cursor: pointer;
+}
+
+.service ul li:nth-child(2) {
+    float: left;
+    height: 142px;
+    background-image: url(../images/foot-icon2.png);
+    background-repeat: no-repeat;
+    background-position: 31px 34px;
+}
+
+.service ul li:nth-child(3) {
+    float: left;
+    height: 142px;
+    background-image: url(../images/foot-icon3.png);
+    background-repeat: no-repeat;
+    background-position: 31px 34px;
+}
+
+.service ul li:nth-child(4) {
+    float: left;
+    height: 142px;
+    background-image: url(../images/foot-icon4.png);
+    background-repeat: no-repeat;
+    background-position: 31px 34px;
+}
+
+.service ul li:nth-child(5) {
+    float: left;
+    height: 142px;
+    background-image: url(../images/foot-icon5.png);
+    background-repeat: no-repeat;
+    background-position: 31px 34px;
+}
+
+.service ul li p {
+    line-height: 75px;
+    font-size: 30px;
+    color: #585858;
+    margin-top: 33px;
+    border-right: 1px solid #c7c6c6;
+    padding-right: 54px;
+}
+
+.foot {
+    width: 100%;
+    height: 293px;
+    background-color: #000;
+}
+
+.foot .footer {
+    height: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.foot .footer ul {
+    float: left;
+    margin-left: 52px;
+    margin-top: 44px;
+}
+
+.foot .footer ul:nth-child(1) {
+    margin-left: 0;
+}
+
+.foot .footer ul li {
+    line-height: 24px;
+}
+
+.foot .footer ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.foot .footer ul li .head {
+    color: #ccc;
+    font-weight: 900;
+}
+
+.foot .footer ul:nth-child(6) {
+    margin-left: 291px;
+}
+
+.foot .footer ul:nth-child(6) p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.foot .footer ul:nth-child(7) {
+    margin-left: 17px;
+}
+
+.foot .footer ul:nth-child(7) p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.foot .footer ul:nth-child(8) {
+    margin-left: 27px;
+    margin-top: 61px;
+}
+
+.foot .footer ul:nth-child(9) {
+    margin-left: 8px;
+    margin-top: 59px;
+}
+
+.foot .footer ul:nth-child(9) .head {
+    color: #fff;
+    font-size: 24px;
+}
+
+.foot .footer ul:nth-child(9) .con {
+    color: #f60012;
+    font-size: 18px;
+}
+
+.foot .footer ul:nth-child(9) .fot {
+    width: 88px;
+    height: 26px;
+    background-color: #f60012;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.foot-bottom {
+    width: 100%;
+    height: 105px;
+    background-color: #000;
+}
+
+.foot-bottom .foot-bottom-bot img {
+    float: left;
+    margin-right: 38px;
+    margin-top: 36px;
+}
+
+.foot-bottom .foot-bottom-bot a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 105px;
+    margin-right: 30px;
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>当当网购物车页面</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Cart.css">
+    <link rel="stylesheet" href="../font-two/iconfont.css">
+    <link rel="stylesheet" href="../css/tabstyle.css" />
+    <link rel="stylesheet" href="../font/font_1949112_21t1sf8ap6m/iconfont.css">
+    <script src="../js/demo.js"></script>
+    <script src="../js/animate.js"></script>
+    <script src="../js/lunbjs.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div class="parent mains">
+        <!-- 头部导航 -->
+        <div class="nav mains">
+            <div class="header mains">
+                <img src="../images/logo_02.jpg" alt="" style="float: left;">
+                <ul class="left">
+                    <li><a href="#">所有商品</a></li>
+                    <li><a href="#">篮球</a></li>
+                    <li><a href="#">跑步</a></li>
+                    <li><a href="#">新品</a></li>
+                    <li><a href="#">企业团购</a></li>
+                    <li><a href="#">大码鞋</a></li>
+                    <li><a href="#">态极</a></li>
+                    <li><a href="../html/seckill.html">秒杀</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="./Signin.html">请登录</a></li>
+                    <li><a href="../html/Cart.html">购物车(0)</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">网站导航</a></li>
+                    <li><a href="#">联系客服<span class="iconfont icon-down"></span></a></li>
+                    <li><a href="#"><span class="iconfont icon-shouji"></span>手机版</a></li>
+                </ul>
+                <div class="sousuo">
+                    <input type="text">
+                    <div class="searchs"><a href="#"><span class="iconfont icon-sousuo1"></span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search main">
+            <ol>
+                <li>我的购物车</li>
+                <li>填写订单</li>
+                <li>完成订单</li>
+            </ol>
+        </div>
+
+        <div class="supshop main">
+
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+                        <th>商品信息</th>
+                        <th>单价(元)</th>
+                        <th>数量</th>
+                        <th>金额(元)</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+                        <td class="goods"><img src="../images/clothes01.jpg" alt="" /><span>JavaScript高级</span></td>
+                        <td class="price">139.0</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1" /><span class="add">+</span></td>
+                        <td class="subtotal">139.0</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+                        <td class="goods"><img src="../images/clothes02.jpg" alt="" /><span>JavaScript高级</span></td>
+                        <td class="price">199.0</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1" /><span class="add">+</span></td>
+                        <td class="subtotal">199.0</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+                        <td class="goods"><img src="../images/shoes01.jpg" alt="" /><span>JavaScript高级</span></td>
+                        <td class="price">699.0</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1" /><span class="add">+</span></td>
+                        <td class="subtotal">699.0</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+                        <td class="goods"><img src="../images/shoes02.jpg" alt="" /><span>JavaScript高级</span></td>
+                        <td class="price">599.0</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1" /><span class="add">+</span></td>
+                        <td class="subtotal">599.0</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="foot" id="foot">
+                <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+                <a class="fl delete" id="deleteAll" href="javascript:;">批量删除</a>
+                <div class="fr closing">结 算</div>
+                <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+                <div class="fr selected" id="selected">已选<span id="selectedTotal">0</span>件商品<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+                <div class="selected-view">
+                    <div id="selectedViewList" class="clearfix">
+                        <div><img src="image/bg1.png"><span>取消选择</span></div>
+                    </div>
+                    <span class="arrow">◆<span>◆</span></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="showmain main">
+            <div class="focus">
+                <h4>买过的人还买了</h4>
+                <ul>
+                    <li>
+                        <a href="#"><img src="../images/clothes01.jpg" alt="">
+                            <h5>男子篮球比赛短套装 </h5>
+                            <h6>139.0</h6>
+                            <span>加入购物车</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/clothes02.jpg" alt="">
+                            <h5>男子篮球比赛短套装 </h5>
+                            <h6>199.0</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes01.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>699.0</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes02.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>66.40</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes03.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>118.20</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes04.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>66.40</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes05.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>66.40</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes06.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>41.70</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes07.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>41.70</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/shoes08.jpg" alt="">
+                            <h5>态极闪现2代混合色</h5>
+                            <h6>66.40</h6>
+                            <span>加入购物车</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class="chevron-left">&lt</div>
+                <div class="chevron-right">&gt</div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="foots mains">
+        <div class="footer mains">
+            <ul>
+                <li><a href="#" class="head">购物相关</a></li>
+                <li><a href="#">新手帮助</a></li>
+                <li><a href="#">购物指南</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">售后服务</a></li>
+                <li><a href="#">正品验证</a></li>
+                <li><a href="#">退货换货</a></li>
+                <li><a href="#">查看物流</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">会员服务</a></li>
+                <li><a href="#">关于抵用券</a></li>
+                <li><a href="#">积分规则</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">友情链接</a></li>
+                <li><a href="#">匹克官网</a></li>
+                <li><a href="#">匹克补货</a></li>
+                <li><a href="#">匹克团购通</a></li>
+                <li><a href="#">匹克校服</a></li>
+                <li><a href="#">匹克品牌</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">服务热线</a></li>
+                <li><a href="#">售前:0595-2275 0137</a></li>
+                <li><a href="#">售后:400-884-8840</a></li>
+                <li><a href="#">工作日 9:00-23:00(节假日不休息)</a></li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qrcode.jpg" alt=""></li>
+                <li>
+                    <p>匹克官方商城<br>微信公众号</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/qrcode.png" alt=""></li>
+                <li>
+                    <p>匹克微服务</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qq.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="head">VIP粉丝群</li>
+                <li class="con">福利 活动 新品</li>
+                <li class="fot"><a href="#">立即加入</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-bottom mains">
+        <div class="foot-bottom-bot main">
+            <img src="../images/morelogo6.png" alt="">
+            <img src="../images/foot-website2.jpg" alt="">
+            <img src="../images/baozhang.bmp" alt="">
+            <img src="../images/xchinapay.png" alt="">
+            <a href="#">Copyright© 2014-匹克网方网店</a>
+            <a href="#">版权所有 | 闽ICP备11009488号-1</a>
+            <a href="#">移动统计</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

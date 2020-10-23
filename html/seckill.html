@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font/font_1949112_21t1sf8ap6m/iconfont.css">
+    <link rel="stylesheet" href="../css/seckill.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <div class="nav">
+        <div class="header main">
+            <a href="../index.html"><img src="../images/logo_02.jpg" alt="" style="float: left;"></a>
+            <ul class="left">
+                <li><a href="#">所有商品</a></li>
+                <li><a href="#">篮球</a></li>
+                <li><a href="#">跑步</a></li>
+                <li><a href="#">新品</a></li>
+                <li><a href="#">企业团购</a></li>
+                <li><a href="#">大码鞋</a></li>
+                <li><a href="#">态极</a></li>
+                <li><a href="../html/seckill.html">秒杀</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="./Signin.html">请登录</a></li>
+                <li><a href="../html/Cart.html">购物车(0)</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">网站导航</a></li>
+                <li><a href="#">联系客服<span class="iconfont icon-down"></span></a></li>
+                <li><a href="#"><span class="iconfont icon-shouji"></span>手机版</a></li>
+            </ul>
+            <div class="sousuo">
+                <input type="text">
+                <div class="search"><a href="#"><span class="iconfont icon-sousuo1"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="title mains">
+        <img src="../images/theme.jpg" alt="">
+    </div>
+    <div class="seckill main">
+        <span>正在秒杀</span>
+        <span>即将开始 </span>
+    </div>
+
+    <div class="like main">
+        <ul>
+            <li>
+                <a href="#"><img src="../images/shoes11.jpg">
+                    <div class="tag">
+                    </div>
+                    <p>态极【闪现】男子高中实战...</p>
+                    <h2>￥699<span>￥799</span><span>立即购买</span></h2>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/shoes13.jpg">
+                    <div class="tag tag2">
+                    </div>
+                    <p>态极【闪现】男子高中实战...</p>
+                    <h2>￥699<span>￥799</span><span>立即购买</span></h2>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/shoes14.jpg">
+                    <div class="tag tag3">
+                    </div>
+                    <p>态极【闪现】男子高中实战...</p>
+                    <h2>￥479<span>￥579</span><span>立即购买</span></h2>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/shoes15.jpg">
+                    <div class="tag tag4">
+                    </div>
+                    <p>态极【闪现】男子高中实战...</p>
+                    <h2>￥399<span>￥459</span><span>立即购买</span></h2>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/shoes16.jpg">
+                    <div class="tag tag5">
+                    </div>
+                    <p>态极【闪现】男子高中实战...</p>
+                    <h2>￥569<span>￥669</span><span>立即购买</span></h2>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function fn1() {
+            //获取当前时间
+            var time1 = new Date();
+            //获取目标时间
+            var time2 = new Date('2020-10-27 00:00:00');
+            //计算时间差
+            var time3 = parseInt((time2 - time1) / 1000);
+            //将时间差转换为时分秒
+            //天
+            var day = Math.floor(time3 / (60 * 60 * 24));
+            //小时
+            var hours = parseInt((time3 - day * 60 * 60 * 24) / 3600);
+            if (hours < 10) {
+                hours = '0' + hours;
+            }
+            //分钟
+            var minutes = parseInt((time3 - day * 60 * 60 * 24 - hours * 3600) / 60);
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+            //秒
+            var seconds = time3 - day * 60 * 60 * 24 - hours * 3600 - minutes * 60;
+            if (seconds < 10) {
+                seconds = '0' + seconds;
+            }
+            //拼接
+            var str1 = "距结束:" + day + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+            //给div对象添加内容
+            document.querySelector('.tag').innerHTML = str1;
+            document.querySelector('.tag2').innerHTML = str1;
+            document.querySelector('.tag3').innerHTML = str1;
+            document.querySelector('.tag4').innerHTML = str1;
+            document.querySelector('.tag5').innerHTML = str1;
+        }
+        //给fn1函数添加定时器，使其每隔一秒执行一次
+        setInterval(fn1, 1000);
+    </script>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="footer main">
+            <ul>
+                <li><a href="#" class="head">购物相关</a></li>
+                <li><a href="#">新手帮助</a></li>
+                <li><a href="#">购物指南</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">售后服务</a></li>
+                <li><a href="#">正品验证</a></li>
+                <li><a href="#">退货换货</a></li>
+                <li><a href="#">查看物流</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">会员服务</a></li>
+                <li><a href="#">关于抵用券</a></li>
+                <li><a href="#">积分规则</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">友情链接</a></li>
+                <li><a href="#">匹克官网</a></li>
+                <li><a href="#">匹克补货</a></li>
+                <li><a href="#">匹克团购通</a></li>
+                <li><a href="#">匹克校服</a></li>
+                <li><a href="#">匹克品牌</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">服务热线</a></li>
+                <li><a href="#">售前:0595-2275 0137</a></li>
+                <li><a href="#">售后:400-884-8840</a></li>
+                <li><a href="#">工作日 9:00-23:00(节假日不休息)</a></li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qrcode.jpg" alt=""></li>
+                <li>
+                    <p>匹克官方商城<br>微信公众号</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/qrcode.png" alt=""></li>
+                <li>
+                    <p>匹克微服务</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qq.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="head">VIP粉丝群</li>
+                <li class="con">福利 活动 新品</li>
+                <li class="fot"><a href="#">立即加入</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-bottom">
+        <div class="foot-bottom-bot main">
+            <img src="../images/morelogo6.png" alt="">
+            <img src="../images/foot-website2.jpg" alt="">
+            <img src="../images/baozhang.bmp" alt="">
+            <img src="../images/xchinapay.png" alt="">
+            <a href="#">Copyright© 2014-匹克网方网店</a>
+            <a href="#">版权所有 | 闽ICP备11009488号-1</a>
+            <a href="#">移动统计</a>
+        </div>
+    </div>
+</body>
+
+</html>

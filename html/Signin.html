@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匹克商城登录</title>
+    <link rel="stylesheet" href="../font/font_1949112_21t1sf8ap6m/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Signin.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <div class="nav">
+        <div class="header main">
+            <a href="../index.html"><img src="../images/logo_02.jpg" alt="" style="float: left;"></a>
+            <ul class="left">
+                <li><a href="#">所有商品</a></li>
+                <li><a href="#">篮球</a></li>
+                <li><a href="#">跑步</a></li>
+                <li><a href="#">新品</a></li>
+                <li><a href="#">企业团购</a></li>
+                <li><a href="#">大码鞋</a></li>
+                <li><a href="#">态极</a></li>
+                <li><a href="../html/seckill.html">秒杀</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="./Signin.html">请登录</a></li>
+                <li><a href="../html/Cart.html">购物车(0)</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">网站导航</a></li>
+                <li><a href="#">联系客服<span class="iconfont icon-down"></span></a></li>
+                <li><a href="#"><span class="iconfont icon-shouji"></span>手机版</a></li>
+            </ul>
+            <div class="sousuo">
+                <input type="text">
+                <div class="search"><a href="#"><span class="iconfont icon-sousuo1"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="register main">
+            <h1>还未注册？</h1>
+            <h3><a href="./register.html" style="color: #000;">注册你的匹克账户</a></h3>
+            <img src="../images/login-code.jpg" alt="">
+            <h2>匹克官方网店微信公众号</h2>
+            <h4>关注不一样的运动商城</h4>
+        </div>
+
+        <div class="Signin main">
+            <h1>登录你的匹克会员</h1>
+            <input type="text" name="" id="username">
+            <input type="text" name="" id="pwd">
+            <h2>忘记密码？</h2>
+            <div class="sig">登录</div>
+            <h3>线下会员激活</h3>
+        </div>
+    </div>
+
+    <!-- 服务信息 -->
+    <div class="service">
+        <ul class="main">
+            <li>
+                <p>防伪查询</p>
+            </li>
+            <li>
+                <p>满99元包邮</p>
+            </li>
+            <li>
+                <p>7天无理由退货</p>
+            </li>
+            <li>
+                <p>品牌直营</p>
+            </li>
+            <li>
+                <p>团购服务</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="footer main">
+            <ul>
+                <li><a href="#" class="head">购物相关</a></li>
+                <li><a href="#">新手帮助</a></li>
+                <li><a href="#">购物指南</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">售后服务</a></li>
+                <li><a href="#">正品验证</a></li>
+                <li><a href="#">退货换货</a></li>
+                <li><a href="#">查看物流</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">会员服务</a></li>
+                <li><a href="#">关于抵用券</a></li>
+                <li><a href="#">积分规则</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">友情链接</a></li>
+                <li><a href="#">匹克官网</a></li>
+                <li><a href="#">匹克补货</a></li>
+                <li><a href="#">匹克团购通</a></li>
+                <li><a href="#">匹克校服</a></li>
+                <li><a href="#">匹克品牌</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="head">服务热线</a></li>
+                <li><a href="#">售前:0595-2275 0137</a></li>
+                <li><a href="#">售后:400-884-8840</a></li>
+                <li><a href="#">工作日 9:00-23:00(节假日不休息)</a></li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qrcode.jpg" alt=""></li>
+                <li>
+                    <p>匹克官方商城<br>微信公众号</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/qrcode.png" alt=""></li>
+                <li>
+                    <p>匹克微服务</p>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="../images/foot-qq.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="head">VIP粉丝群</li>
+                <li class="con">福利 活动 新品</li>
+                <li class="fot"><a href="#">立即加入</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot-bottom">
+        <div class="foot-bottom-bot main">
+            <img src="../images/morelogo6.png" alt="">
+            <img src="../images/foot-website2.jpg" alt="">
+            <img src="../images/baozhang.bmp" alt="">
+            <img src="../images/xchinapay.png" alt="">
+            <a href="#">Copyright© 2014-匹克网方网店</a>
+            <a href="#">版权所有 | 闽ICP备11009488号-1</a>
+            <a href="#">移动统计</a>
+        </div>
+    </div>
+
+    <script>
+        $('.sig').on('click', function() {
+            var username = $('#username').val();
+            var password = $('#pwd').val();
+            if (username.trim().length == 0) {
+                alert('请输入用户名')
+
+            }
+            if (password.trim().length == 0) {
+                alert('请输入密码');
+                return;
+            }
+            $.ajax({
+                type: 'POST',
+                url: '../php/login.php',
+                data: {
+                    username: username,
+                    password: password
+                },
+                success: function(result) {
+                    console.log(result)
+                    if (result.code) {
+                        location.href = '../index.html'
+                    } else {
+                        console.log(2)
+                    }
+
+                },
+                dataType: 'json'
+
+            })
+        });
+    </script>
+</body>
+
+</html>
